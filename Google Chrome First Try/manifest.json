@@ -1,0 +1,19 @@
+{
+	"manifest_version":2,
+
+	"name": "Testing out Google Chrome",
+	"description" : "Extention Test",
+	"version" : "1.0",
+
+	"browser_action": {
+		"default_icon" : "depauw.png",
+		"default_popup" : "popup.html",
+		"default_title" : "Click here!"
+	},
+	
+	"permissions":[
+		"activeTab",
+		"contentSettings",
+		"https://ajax.googleapis.com/"
+	]
+}
