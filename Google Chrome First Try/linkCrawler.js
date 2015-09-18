@@ -51,6 +51,22 @@ function renderStatus(statusText) {
   document.getElementById('status').textContent = statusText;
 }
 
+//Content Script
+var greeting = "Testing Click, ";
+var button = document.getElementById("mybutton");
+var buttonTag = document.getElementsByTagName("button")
+button.person_name = "ITAP";
+button.addEventListener("click", function() {
+  alert(greeting + button.person_name + ".");
+  alert(buttonTag.length); //Number of Buttons
+}, false);
+
+//This runs when the document is clicked
+document.addEventListener("click", function() {
+  alert(12);
+},false);
+
+//Permission that runs when the bowser action is clicked
 document.addEventListener('DOMContentLoaded', function() {
   getCurrentTabUrl(function(url) {
     // Put the image URL in Google search.
@@ -59,3 +75,4 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 });
+
