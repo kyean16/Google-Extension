@@ -1,0 +1,12 @@
+{
+  "name": "Web Request",
+  "version": "1.0",
+  "description": "Replaces Images!",
+  "permissions": ["webRequest","downloads","notifications" , "webRequestBlocking",
+                  "<all_urls>"],
+  "background": {
+    "scripts": ["running.js", "background.js"]
+  },
+
+  "manifest_version": 2
+}
