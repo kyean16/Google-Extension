@@ -9,4 +9,6 @@ import scrapy
 
 
 class TutorialItem(scrapy.Item):
-    links = scrapy.Field();
+    title = scrapy.Field();
+    link = scrapy.Field();
+    desc = scrapy.Field();

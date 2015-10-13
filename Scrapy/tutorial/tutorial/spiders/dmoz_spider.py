@@ -5,7 +5,7 @@ from scrapy.selector import Selector
 from scrapy.http import HtmlResponse
 
 class DmozSpider(scrapy.Spider):
-    name ="depauw" #Name of the Spider
+    name ="kevinyean" #Name of the Spider
     allowed_domains = ["kevinyean.com"] #Domained Allowed
     start_urls = ["http://www.kevinyean.com"] #Starting Websites
     
